@@ -1,4 +1,4 @@
-class Solution {
+/*class Solution {
     public int maxOperations(int[] nums) {
        Queue<Integer>q=new ArrayDeque<>();
        for(int i=0;i<nums.length;i++)
@@ -20,8 +20,27 @@ class Solution {
        {
         break;
        }
-
        }
        return c;   
        } 
+    }*/
+    class Solution
+    {
+        public int maxOperations(int[] nums) {
+            int target=nums[0]+nums[1];
+            int c=0;
+            for(int i=0;i<nums.length-1;i+=2)
+            {
+                if(nums[i]+nums[i+1]==target)
+                {
+                    c++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            return c;
+        }
     }
+
