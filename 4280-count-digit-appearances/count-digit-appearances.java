@@ -5,6 +5,10 @@ class Solution {
       for(int i=0;i<n;i++)
       {
          int d=nums[i];
+         if (d == 0 && digit == 0) {
+                c++;
+               continue;
+    }
          while(d!=0)
          {
             if(d%10==digit)
