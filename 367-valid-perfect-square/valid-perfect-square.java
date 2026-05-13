@@ -1,10 +1,10 @@
 class Solution {
     public boolean isPerfectSquare(int num) {
-      /* int low=1;
-       int high=num;
+      long low=1;
+      long high=num;
        while(low<=high)
        {
-        int mid=low+(high-low)/2;
+        long mid=low+(high-low)/2;
         if(mid*mid==num)
         {
             return true;
@@ -19,15 +19,15 @@ class Solution {
         }
        
        } 
-       return false;*/
-       for(long i=1;i*i<=num;i++)
+       return false;
+     /*  for(long i=1;i*i<=num;i++)
        {
            if(i*i==num)
            {
             return true;
            }
        }
-       return false;
+       return false;*/
 
     }
 }
