@@ -10,7 +10,7 @@ class Solution {
             {
                r1++;
             }
-            else if( moves.charAt(i)=='R')
+          else if( moves.charAt(i)=='R')
             {
                 r2++;
             }
@@ -44,14 +44,22 @@ class Solution {
             }
             
         }
-       /* if(moves.length()==1 && moves.charAt(0)=='R')
-        {
-            return 1;
-        }
-        else if(moves.length()==1 && moves.charAt(0)=='L')
-        {
-            return 1;*/
-        
         return Math.abs(c1-c2);
     }
 }
+/*class Solution {
+    public int furthestDistanceFromOrigin(String moves) {
+        int left = 0, right = 0, blank = 0;
+
+        for (char ch : moves.toCharArray()) {
+            if (ch == 'L') left++;
+            else if (ch == 'R') right++;
+            else blank++;
+        }
+
+        return Math.abs(right - left) + blank;
+    }
+}*/
+/*Count how many fixed left and right moves there are.
+Whichever side already has more moves, assign every _ to that side.
+Then compute the final distance.*/
