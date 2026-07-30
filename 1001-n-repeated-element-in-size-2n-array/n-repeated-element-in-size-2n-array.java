@@ -1,6 +1,6 @@
 class Solution {
     public int repeatedNTimes(int[] nums) {
-        int n=nums.length;
+        /*int n=nums.length;
         int f[]=new int[10001];
         for(int i=0;i<nums.length;i++)
         {
@@ -15,6 +15,19 @@ class Solution {
                 break;
             }
         }
-        return ans;
+        return ans;*/
+        HashSet<Integer>s=new HashSet<>();
+      for(int x:nums)
+      {
+      if(s.contains(x))
+      {
+       return x;
+       }
+      s.add(x);
+      }
+     
+     return -1;
     }
 }
+
+ 
