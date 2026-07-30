@@ -8,7 +8,7 @@ class Solution {
        int s=0;
        for(int i=1;i<=100;i++)
        {
-           if(f[i]%k==0)
+           if( f[i]>0 && f[i]%k==0)
            {
             s+=f[i]*i;
            }
