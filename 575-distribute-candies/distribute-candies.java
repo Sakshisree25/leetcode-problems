@@ -7,13 +7,17 @@ class Solution {
       } 
       int n=candyType.length;
       int c=n/2;
-      if(s.size()<c)
+      if(c==s.size())
       {
         return s.size();
       }
-      else
+      else if(c<s.size())
       {
         return c;
+      }
+      else
+      {
+        return s.size();
       }
     }
 }
