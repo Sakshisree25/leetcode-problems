@@ -1,6 +1,5 @@
 class Solution {
     public int countWords(String[]s1, String[]s2) {
-        StringBuilder sb=new StringBuilder();
         int c=0;
         HashMap<String,Integer>m1=new HashMap<>();
          HashMap<String,Integer>m2=new HashMap<>();
